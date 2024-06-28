@@ -16,5 +16,5 @@ URL2 = "https://www.washingtonpost.com/technology/2020/09/25/privacy-check-black
 
 soup = BeautifulSoup(pagina.content, "html.parser")
 
-resultado = soup.find_all("div",class_="subtitle is-3")
+resultado = soup.find("h1",class_="title is-1")
 print(resultado.prettify())
